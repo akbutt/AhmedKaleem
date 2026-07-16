@@ -144,28 +144,28 @@ font-size: var(--desktop-font-size);
 }
 
 .popup-title {
-
+  font-family: 'Jost', sans-serif;
   font-size: 30px;
-
+color:#000;
   margin-bottom: 10px;
 
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .popup-price {
-
+  font-family: 'Lustria', sans-serif;
   font-size: 24px;
-
+color:#000;
   margin-bottom: 20px;
 
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .popup-description {
 
   margin-bottom: 25px;
 
-  color: #555;
+  color: #000;
 
   line-height: 1.6;
 }
@@ -307,13 +307,13 @@ width:95%;
 
 .popup-title{
 
-font-size:24px;
+font-size:16px;
 
 }
 
 .popup-price{
 
-font-size:20px;
+font-size:16px;
 
 }
 
@@ -390,21 +390,21 @@ body.shop-look-popup-open {
 
 .popup-title {
   margin: 0 0 8px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.1;
 }
 
 .popup-price {
   margin: 0 0 14px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .popup-description {
   margin: 0 0 18px;
-  color: #4a4a4a;
-  font-size: 13px;
+  color: #000;
+  font-size: 12px;
   line-height: 1.6;
 }
 
@@ -415,17 +415,17 @@ body.shop-look-popup-open {
 .popup-option label {
   display: block;
   margin-bottom: 8px;
-  font-size: 11px;
-  font-weight: 700;
+font-size: 14px;
+    font-weight: 400;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #111;
 }
 
 .popup-values {
   display: flex;
   border: 1px solid #111;
-  border-radius: 14px;
+  /* border-radius: 14px; */
   overflow: hidden;
 }
 
@@ -475,8 +475,8 @@ body.shop-look-popup-open {
   right: 28px;
   width: 14px;
   height: 14px;
-  border-right: 3px solid #111;
-  border-bottom: 3px solid #111;
+  border-right: 2px solid #111;
+  border-bottom: 2px solid #111;
   transform: translateY(-70%) rotate(45deg);
   pointer-events: none;
 }
@@ -504,11 +504,11 @@ body.shop-look-popup-open {
   min-height: 56px;
   margin-top: 18px;
   border: none;
-  border-radius: 14px;
+  /* border-radius: 14px; */
   background: #111;
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
@@ -541,7 +541,7 @@ body.shop-look-popup-open {
   }
 
   .popup-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .popup-price {
@@ -549,7 +549,7 @@ body.shop-look-popup-open {
   }
 
   .popup-description {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .popup-details {
@@ -572,4 +572,9 @@ display: flex;
     min-height: 140px;
     min-width: 120px;
     max-width: min-content;
+}
+.popup-select option {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }

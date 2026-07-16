@@ -1,0 +1,77 @@
+{% comment %} {% assign product = product %}
+
+<div class="shop-look-product" data-product='{{ product | json | escape }}'>
+
+  <div class="popup-top">
+
+    <div class="popup-image">
+      <img
+        src="{{ product.featured_image | image_url: width:600 }}"
+        alt="{{ product.title }}"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="popup-content">
+
+      <h2 class="popup-title">
+        {{ product.title }}
+      </h2>
+
+      <div class="popup-price">
+        {{ product.price | money }}
+      </div>
+
+      <div class="popup-description">
+        {{ product.description }}
+      </div>
+
+    </div>
+
+  </div>
+
+  {% for option in product.options_with_values %}
+
+    <div class="popup-option">
+
+      <label>{{ option.name }}</label>
+
+      {% if option.name == 'Size' %}
+
+        <select
+          class="popup-select"
+          data-option-position="{{ option.position }}"
+        >
+          {% for value in option.values %}
+            <option>{{ value }}</option>
+          {% endfor %}
+        </select>
+
+      {% else %}
+
+        <div
+          class="popup-values"
+          data-option-position="{{ option.position }}"
+        >
+          {% for value in option.values %}
+            <button
+              type="button"
+              class="{% if forloop.first %}active{% endif %}"
+              data-value="{{ value }}"
+            >
+              {{ value }}
+            </button>
+          {% endfor %}
+        </div>
+
+      {% endif %}
+
+    </div>
+
+  {% endfor %}
+
+  <button class="popup-add" type="button">
+    ADD TO CART
+  </button>
+
+</div> {% endcomment %}

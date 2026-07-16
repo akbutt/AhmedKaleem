@@ -35,36 +35,121 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
+      }
+    },
+    "gift_banner_M4VrtT": {
+      "type": "gift-banner",
+      "name": "Gift Guide Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/young-man-in-bright-fashion_925x_b3b7ebd6-c91f-496a-a516-45403497ea25.jpg",
+        "logo_text": "TISSO VISON",
+        "top_message": "Find the ideal gift for your loved ones.",
+        "top_button_text": "CHOOSE GIFT",
+        "top_button_link": "",
+        "heading": "The Gift Guide",
+        "description": "<p>Discover joy. Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>",
+        "button_text": "SHOP NOW",
+        "button_link": "",
+        "bottom_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+      }
+    },
+    "shop_the_look_fyC36i": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_wmGhkW": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-bag",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        },
+        "product_qTFXCd": {
+          "type": "product",
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        },
+        "product_Ex4Bqa": {
+          "type": "product",
+          "settings": {
+            "product": "chequered-red-shirt",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        },
+        "product_HyJjLe": {
+          "type": "product",
+          "settings": {
+            "product": "classic-leather-jacket",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        },
+        "product_3YHAwF": {
+          "type": "product",
+          "settings": {
+            "product": "classic-varsity-top",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        },
+        "product_h4LDQm": {
+          "type": "product",
+          "settings": {
+            "product": "dark-denim-top",
+            "icon_left": 50,
+            "icon_top": 50
+          }
+        }
+      },
+      "block_order": [
+        "product_wmGhkW",
+        "product_qTFXCd",
+        "product_Ex4Bqa",
+        "product_HyJjLe",
+        "product_3YHAwF",
+        "product_h4LDQm"
+      ],
+      "name": "Shop The Look",
+      "settings": {
+        "heading": "This vision in the wild.",
+        "bonus_product": "",
+        "heading_font_size_desktop": 48,
+        "heading_font_size_mobile": 28
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -72,6 +157,7 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -79,6 +165,8 @@
   },
   "order": [
     "image_banner",
+    "gift_banner_M4VrtT",
+    "shop_the_look_fyC36i",
     "featured_collection"
   ]
 }
